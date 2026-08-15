@@ -1,0 +1,13 @@
+/* Keep the task strip's horizontal scrollbar easy to grab without letting
+   full-height column resize handles cover its click target. */
+.tiling-layout-strip {
+  scrollbar-width: auto;
+}
+
+.tiling-layout-strip::-webkit-scrollbar {
+  height: 10px;
+}
+
+.tiling-layout-strip > div > .resize-handle-h {
+  margin-bottom: 12px;
+}
